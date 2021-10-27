@@ -88,6 +88,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--цвет-текста);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link > span {
@@ -114,6 +115,8 @@ img {
   letter-spacing: 0.02em;
   color: var(--основной-цвет);
   fill: var(--основной-цвет);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:hover,
 .contacts:focus {
@@ -166,6 +169,7 @@ img {
   border-radius: 4px;
   border-style: none;
   background-color: var(--цвет-фокуса);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-btn {
   font-weight: 700;
@@ -315,6 +319,7 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-link:hover {
   background-color: var(--цвет-фокуса);
@@ -324,6 +329,7 @@ img {
 }
 .icon {
   fill: var(--цвет-иконок);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*-----✌️страница КЛИЕНТЫ🤞-----*/
@@ -354,6 +360,8 @@ img {
   border-radius: 4px;
   border: 1px solid var(--цвет-иконок);
   fill: var(--цвет-иконок);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-item:last-child {
   margin-right: 0px;
@@ -391,6 +399,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts:hover,
 .footer-contacts:focus {
@@ -439,6 +448,7 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon2 {
   fill: var(--цвет-фона);
@@ -465,6 +475,8 @@ img {
   cursor: pointer;
   padding: 6px 22px;
   border-style: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons:hover,
 .buttons:focus {
@@ -525,4 +537,5 @@ img {
 }
 .product-link {
   display: inline-block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
