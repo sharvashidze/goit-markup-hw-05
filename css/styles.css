@@ -572,31 +572,3 @@ img {
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.product-block {
-  position: relative;
-  overflow: hidden;
-}
-
-.block-hover {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  transform: translateY(90%);
-  padding: 63px 24px;
-  z-index: 1;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: rgba(33, 150, 243, 0.9);
-}
-
-.hover-text {
-  font-size: 18px;
-  line-height: 1.55;
-  letter-spacing: 0.03em;
-  color: var(--цвет-фона);
-}
-.block-hover:hover {
-  transform: translateY(0);
-}
