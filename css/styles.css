@@ -199,7 +199,7 @@ img {
   background-color: var(--цвет-кнопки-ховер);
 }
 /*-----✌️MODAL Страницы🤞------*/
-.backdrop-block {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -207,6 +207,12 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 1;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 .modal {
   position: absolute;
@@ -219,7 +225,6 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-x {
   display: block;
@@ -231,12 +236,16 @@ img {
   margin-top: 8px;
   background: var(--цвет-фона);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover,
+.modal-close:focus {
+  fill: var(--цвет-фокуса);
 }
 /*--✌️Характеристики Страницы🤞---*/
 .is-hidden {
